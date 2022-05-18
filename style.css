@@ -20,9 +20,13 @@ body{
 }
 
 .imgRandom {
-    height: 20rem;
-    width: 20rem;
-    border-style: solid;
+    height: 30rem;
+    width: 30rem;
+}
+
+.picture {
+    max-width: 10rem;
+    max-height: 10rem; 
 }
 
 
@@ -42,6 +46,10 @@ body{
     cursor: pointer;
 }
 
+.imgRandom {
+    border-style: solid;
+}
+
 .gridBox {
     width: 80rem;
     height: 60rem;
@@ -51,6 +59,11 @@ body{
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: .5rem;
     border-style: solid;
+}
+
+.generator {
+    height: 100%;
+    object-fit: cover;
 }
 
 .uno {
