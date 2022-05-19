@@ -21,7 +21,7 @@ function search() {
 
             console.log(breeds);
             localStorage.setItem("Razas Repetidas", JSON.stringify(breeds));
-        })
+        });
 }
 
 

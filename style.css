@@ -9,36 +9,16 @@ html{
 
 body{
     font-size: 16px;
-    margin: 10rem;
-
+    margin: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    place-items: center;
-    height: 99rem;
-}
-
-.imgRandom {
-    height: 30rem;
-    width: 30rem;
-}
 
 img {
     width: 20rem;
     height: 20rem;
-}
-.picture {
-    max-width: 10rem;
-    max-height: 10rem; 
-}
-
-
-.search {
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
 }
 
 #random {
@@ -52,107 +32,16 @@ img {
     display: block;
 }
 
-.imgRandom {
-    border-style: solid;
-}
-
 .gridBox {
     width: 80rem;
     height: 60rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-
+    margin-right: 20rem;
 }
 
-.generator {
-    height: 100%;
-    object-fit: cover;
-}
 
-#uno {
-    grid-column: 1/2 ;
-    grid-row: 1/2;
-    
-}
-#dos {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    
-}
-#tres {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    
-}
-#cuatro {
-    grid-column: 4/5;
-    grid-row: 1/2;
-   
-}
-#cinco {
-    grid-column: 5/6;
-    grid-row: 1/2;
-    
-}
-#seis {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-#siete {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-#ocho {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-#nueve {
-    grid-column: 4/5;
-    grid-row: 2/3;
-}
-#diez {
-    grid-column: 5/6;
-    grid-row: 2/3;
-}
-#once {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-#doce {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-#trece {
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-#catorce {
-    grid-column: 4/5;
-    grid-row: 3/4;
-}
-#quince {
-    grid-column: 5/6;
-    grid-row: 3/4;
-}
-#dieciseis {
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-#diecisiete {
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-#dieciocho {
-    grid-column: 3/4;
-    grid-row: 4/5;
-}
-#diecinueve {
-    grid-column: 4/5;
-    grid-row: 4/5;
-}
-#veite {
-    grid-column: 5/6;
-    grid-row: 4/5;
-}
+
+
 
