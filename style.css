@@ -9,7 +9,8 @@ html{
 
 body{
     font-size: 16px;
-    margin: 0;
+    margin: 10rem;
+
 }
 
 .container {
@@ -24,6 +25,10 @@ body{
     width: 30rem;
 }
 
+img {
+    width: 20rem;
+    height: 20rem;
+}
 .picture {
     max-width: 10rem;
     max-height: 10rem; 
@@ -44,6 +49,7 @@ body{
     background-color: darkslateblue;
     color: white;
     cursor: pointer;
+    display: block;
 }
 
 .imgRandom {
@@ -53,12 +59,10 @@ body{
 .gridBox {
     width: 80rem;
     height: 60rem;
-    background-color: black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: .5rem;
-    border-style: solid;
+
 }
 
 .generator {
@@ -66,102 +70,102 @@ body{
     object-fit: cover;
 }
 
-.uno {
+#uno {
     grid-column: 1/2 ;
     grid-row: 1/2;
-    background-color: white;
+    
 }
-.dos {
+#dos {
     grid-column: 2/3;
     grid-row: 1/2;
     background-color: white;
 }
-.tres {
+#tres {
     grid-column: 3/4;
     grid-row: 1/2;
     background-color: white;
 }
-.cuatro {
+#cuatro {
     grid-column: 4/5;
     grid-row: 1/2;
     background-color: white;
 }
-.cinco {
+#cinco {
     grid-column: 5/6;
     grid-row: 1/2;
     background-color: white;
 }
-.seis {
+#seis {
     grid-column: 1/2;
     grid-row: 2/3;
     background-color: white;
 }
-.siete {
+#siete {
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: white;
 }
-.ocho {
+#ocho {
     grid-column: 3/4;
     grid-row: 2/3;
     background-color: white;
 }
-.nueve {
+#nueve {
     grid-column: 4/5;
     grid-row: 2/3;
     background-color: white;
 }
-.diez {
+#diez {
     grid-column: 5/6;
     grid-row: 2/3;
     background-color: white;
 }
-.once {
+#once {
     grid-column: 1/2;
     grid-row: 3/4;
     background-color: white;
 }
-.doce {
+#doce {
     grid-column: 2/3;
     grid-row: 3/4;
     background-color: white;
 }
-.trece {
+#trece {
     grid-column: 3/4;
     grid-row: 3/4;
     background-color: white;
 }
-.catorce {
+#catorce {
     grid-column: 4/5;
     grid-row: 3/4;
     background-color: white;
 }
-.quince {
+#quince {
     grid-column: 5/6;
     grid-row: 3/4;
     background-color: white;
 }
-.dieciseis {
+#dieciseis {
     grid-column: 1/2;
     grid-row: 4/5;
     background-color: white;
 }
-.diecisiete {
+#diecisiete {
     grid-column: 2/3;
     grid-row: 4/5;
     background-color: white;
 }
-.dieciocho {
+#dieciocho {
     grid-column: 3/4;
     grid-row: 4/5;
     background-color: white;
 }
-.diecinueve {
+#diecinueve {
     grid-column: 4/5;
     grid-row: 4/5;
     background-color: white;
 }
-.veite {
+#veite {
     grid-column: 5/6;
     grid-row: 4/5;
     background-color: white;
