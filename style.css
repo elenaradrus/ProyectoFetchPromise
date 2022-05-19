@@ -78,96 +78,81 @@ img {
 #dos {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: white;
+    
 }
 #tres {
     grid-column: 3/4;
     grid-row: 1/2;
-    background-color: white;
+    
 }
 #cuatro {
     grid-column: 4/5;
     grid-row: 1/2;
-    background-color: white;
+   
 }
 #cinco {
     grid-column: 5/6;
     grid-row: 1/2;
-    background-color: white;
+    
 }
 #seis {
     grid-column: 1/2;
     grid-row: 2/3;
-    background-color: white;
 }
 #siete {
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: white;
 }
 #ocho {
     grid-column: 3/4;
     grid-row: 2/3;
-    background-color: white;
 }
 #nueve {
     grid-column: 4/5;
     grid-row: 2/3;
-    background-color: white;
 }
 #diez {
     grid-column: 5/6;
     grid-row: 2/3;
-    background-color: white;
 }
 #once {
     grid-column: 1/2;
     grid-row: 3/4;
-    background-color: white;
 }
 #doce {
     grid-column: 2/3;
     grid-row: 3/4;
-    background-color: white;
 }
 #trece {
     grid-column: 3/4;
     grid-row: 3/4;
-    background-color: white;
 }
 #catorce {
     grid-column: 4/5;
     grid-row: 3/4;
-    background-color: white;
 }
 #quince {
     grid-column: 5/6;
     grid-row: 3/4;
-    background-color: white;
 }
 #dieciseis {
     grid-column: 1/2;
     grid-row: 4/5;
-    background-color: white;
 }
 #diecisiete {
     grid-column: 2/3;
     grid-row: 4/5;
-    background-color: white;
 }
 #dieciocho {
     grid-column: 3/4;
     grid-row: 4/5;
-    background-color: white;
 }
 #diecinueve {
     grid-column: 4/5;
     grid-row: 4/5;
-    background-color: white;
 }
 #veite {
     grid-column: 5/6;
     grid-row: 4/5;
-    background-color: white;
 }
 

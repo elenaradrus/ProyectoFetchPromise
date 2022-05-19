@@ -7,18 +7,23 @@ function search() {
     fetch('https://dog.ceo/api/breeds/image/random')
         .then(res => res.json())
         .then(json => {
-            // console.log(json)
-            // let divImgen = document.getElementById("divImg")
-            // const generarLink = json.message;
-            // divImgen.innerHTML = `<img src='${generarLink}'/>`
-            document.getElementById('picture').src = json.message;
-            console.log(linkArray);
+           
+            const links = document.getElementById('picture').src = json.message;
+            //console.log(linkArray);
             count++
 
-            const splitMessage = json.message.split('/');
-            const getBreedPosition = splitMessage[4];
-            breeds.push(getBreedPosition);
-            console.log(breeds);
+            const splitMessage = json.message.split('/')[4];
+            breeds.push(splitMessage);
+            console.log(breeds)
+
+            for (let i = 0; i < breeds.length; i++) {
+                if (json.message.split('/')[4] == breeds) {
+                    console.log("Existe");
+                } else {
+                    console.log("No existe");
+                }
+            }
+
 
             if (count == 1) {
                 document.getElementById("1").src = json.message;
@@ -73,17 +78,6 @@ function search() {
 
 
         })
-
-    // .then(json => {
-
-
-    //     document.getElementById("uno").src = json.message;
-
-
-    //     //if()
-    //     //document.getElementById("uno").src = json.message;
-    //     return json
-    // })
 }
 
 //search();
