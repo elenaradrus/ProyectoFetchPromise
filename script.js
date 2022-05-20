@@ -3,8 +3,8 @@ let breeds = [];
 
 function search() {
     fetch("https://dog.ceo/api/breeds/image/random")
-        .then((res) => res.json())
-        .then((json) => {
+        .then(res => res.json())
+        .then(json => {
 
             const dogPics = document.getElementById("picture").src = json.message;
 
