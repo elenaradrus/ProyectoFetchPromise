@@ -19,11 +19,14 @@ function search() {
                 count++
             } else {
                 breeds.push(splitMessage);
-                const phrase = document.createElement('h2');
+                const phrase = document.createElement('h3');
                 const text = document.createTextNode('La imagen no se insertará al ser una raza repetida');
                 phrase.appendChild(text);
                 document.body.appendChild(phrase);
-            }
+                setTimeout (() => {
+                    phrase.style.display = 'none';
+                }, 4000);
+            } 
 
             console.log(breeds);
             localStorage.setItem("Razas Repetidas", JSON.stringify(breeds));
