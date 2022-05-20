@@ -14,9 +14,15 @@ function search() {
             let repeatedBreed = breeds.includes(splitMessage);
 
             if (!repeatedBreed) {
-                document.getElementById(`img${count}`).src = dogPics;
+                document.getElementById(`${count}`).src = dogPics;
                 breeds.push(splitMessage);
                 count++
+            } else {
+                breeds.push(splitMessage);
+                const phrase = document.createElement('h2');
+                const text = document.createTextNode('La imagen no se insertará al ser una raza repetida');
+                phrase.appendChild(text);
+                document.body.appendChild(phrase);
             }
 
             console.log(breeds);
