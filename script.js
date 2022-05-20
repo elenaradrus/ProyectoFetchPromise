@@ -1,5 +1,4 @@
 let count = 1;
-
 let breeds = [];
 
 function search() {
@@ -32,8 +31,3 @@ function search() {
             localStorage.setItem("Razas Repetidas", JSON.stringify(breeds));
         });
 }
-
-
-
-//en el boton random guardar las urls generadas para ver si se repite y desecharla.
-//saber cuantas veces se ha creado la misma url para hacer la gráfica.
