@@ -10,15 +10,22 @@ html{
 body{
     font-size: 16px;
     margin: 5rem;
+}
+
+main {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+
 }
 
 
 img {
     width: 20rem;
     height: 20rem;
+    border-style: solid;
+    border-color: black;
+
 }
 
 #random {
@@ -32,9 +39,17 @@ img {
     display: block;
 }
 
+#random:hover {background-color: darkslateblue}
+
+#random:active {
+  background-color: darkslateblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .gridBox {
-    width: 80rem;
-    height: 60rem;
+    width: 100rem;
+    height: 80rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;

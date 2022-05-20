@@ -24,7 +24,7 @@ function search() {
                 document.body.appendChild(phrase);
                 setTimeout(() => {
                     phrase.style.display = 'none';
-                }, 4000);
+                }, 2000);
             }
 
             console.log(breeds);
