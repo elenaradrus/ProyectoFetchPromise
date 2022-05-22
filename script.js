@@ -7,9 +7,7 @@ function search() {
         .then(json => {
 
             const dogPics = document.getElementById("picture").src = json.message;
-
             const splitMessage = dogPics.split('/')[4];
-
             let repeatedBreed = breeds.includes(splitMessage);
 
             if (!repeatedBreed) {
@@ -17,30 +15,31 @@ function search() {
                 breeds.push(splitMessage);
                 count++
             } else {
-                breeds.push(splitMessage);
                 const phrase = document.createElement('h3');
                 const text = document.createTextNode('La imagen no se insertará al ser una raza repetida');
                 phrase.appendChild(text);
                 document.body.appendChild(phrase);
+                phrase.style.marginTop = "-20rem";
+                phrase.style.display = "flex";
+                phrase.style.justifyContent = "center";
                 setTimeout(() => {
                     phrase.style.display = 'none';
                 }, 2000);
             }
 
             console.log(breeds);
-            localStorage.setItem("Razas Repetidas", JSON.stringify(breeds));
+            localStorage.setItem("Razas de Perros", JSON.stringify(breeds));
         })
         .then(json => {
             if (count == 21) {
                 const getChart = document.getElementById('myChart');
-
                 const dogChart = new Chart(getChart, {
-                    type: 'line',
+                    type: 'bar',
                     data: {
                         labels: breeds,
                         datasets: [{
                             label: 'Razas de perros',
-                            data: [5, 2, 1, 4, 10, 6, 1, 3, 10, 20, 15, 3, 6, 8, 9, 2, 8, 13, 12, 5],
+                            data: [1, 1, 2, 3, 1, 2, 1, 2, 2, 1, 3, 3, 2, 1, 1, 2, 3, 1, 2, 2],
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
                                 'rgba(54, 162, 235, 0.2)',

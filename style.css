@@ -9,23 +9,41 @@ html{
 
 body{
     font-size: 16px;
-    margin: 5rem;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    background-image: url('./dogFood.png');
+    background-size: cover;
+    height: 20rem;
+    letter-spacing: 2rem;
+    margin-bottom: 5rem;
 }
 
 main {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 5rem;
-
 }
 
+.mainPic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-left: 20rem;
+    margin-right: 10rem;
+}
 
 img {
     width: 20rem;
     height: 20rem;
     border-style: solid;
     border-color: black;
-
 }
 
 #random {
@@ -33,16 +51,14 @@ img {
     font-size: 2.5rem;
     border-radius: 1rem;
     border-style: none;
-    background-color: darkslateblue;
+    background-color: midnightblue;
     color: white;
     cursor: pointer;
     display: block;
+    box-shadow: 10px 10px 5px 0px rgba(153,153,153,1);
 }
 
-#random:hover {background-color: darkslateblue}
-
 #random:active {
-  background-color: darkslateblue;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -57,7 +73,12 @@ img {
 }
 
 .graphic {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 120rem;
+    max-height: 100rem;
+    margin: 10rem 0rem 0rem 27rem;
 }
 
 
