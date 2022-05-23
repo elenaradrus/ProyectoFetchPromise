@@ -72,7 +72,7 @@ function search() {
                     data: {
                         labels: nameDogs,
                         datasets: [{
-                            label: nameDogs,
+                            label: "Breeds",
                             data: countDogs,
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
