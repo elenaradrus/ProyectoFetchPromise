@@ -1,6 +1,7 @@
 let count = 1;
 let breeds = [];
 let retrieveData = [];
+
 function search() {
     console.log(localStorage.length);
     retrieveData = localStorage.getItem("Razas_de_Perros");
