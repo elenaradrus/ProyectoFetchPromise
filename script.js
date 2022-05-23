@@ -5,6 +5,7 @@ let retrieveData = [];
 function search() {
     console.log(localStorage.length);
     retrieveData = localStorage.getItem("Razas_de_Perros");
+
     fetch("https://dog.ceo/api/breeds/image/random")
         .then(res => res.json())
         .then(json => {
@@ -12,6 +13,7 @@ function search() {
             const splitMessage = dogPics.split('/')[4];
             let repeatedBreed = breeds.includes(splitMessage);
             retrieveData = JSON.parse(localStorage.getItem("Razas_de_Perros"));
+
             if (retrieveData == null) {
                 retrieveData = [];
                 retrieveData.push([splitMessage, 1, json.message]);
@@ -33,6 +35,7 @@ function search() {
                     localStorage.setItem("Razas_de_Perros", JSON.stringify(retrieveData))
                 }
             }
+
             console.log(retrieveData);
             retrieveData = JSON.parse(localStorage.getItem("Razas_de_Perros"));
             if (!repeatedBreed) {
@@ -52,7 +55,7 @@ function search() {
                     phrase.style.display = 'none';
                 }, 2000);
             }
-            //console.log(breeds);
+            
         })
         .then(json => {
             let nameDogs = []
@@ -72,7 +75,7 @@ function search() {
                     data: {
                         labels: nameDogs,
                         datasets: [{
-                            label: "Breeds",
+                            label: "Dog Breeds",
                             data: countDogs,
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
