@@ -46,7 +46,7 @@ img {
     border-color: black;
 }
 
-#random {
+#random, #clearData {
     padding: 1rem;
     font-size: 2.5rem;
     border-radius: 1rem;
@@ -78,10 +78,5 @@ img {
     align-items: center;
     max-width: 120rem;
     max-height: 100rem;
-    margin: 10rem 0rem 0rem 27rem;
+    margin: 10rem 0rem 0rem 30rem;
 }
-
-
-
-
-
