@@ -39,7 +39,7 @@ function search() {
             retrieveData = JSON.parse(localStorage.getItem("Razas_de_Perros"));
             if (!repeatedBreed) {
                 document.getElementById(`${count}`).src = dogPics;
-                breeds.push([splitMessage, 1]);
+                breeds.push(splitMessage);
                 count++
             } 
             
