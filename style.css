@@ -73,9 +73,6 @@ img {
 }
 
 .graphic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 120rem;
     max-height: 100rem;
     margin: 10rem 0rem 0rem 30rem;
