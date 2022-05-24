@@ -58,7 +58,7 @@ img {
     box-shadow: 10px 10px 5px 0px rgba(153,153,153,1);
 }
 
-#random:active {
+#random:active, #clearData:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
