@@ -3,7 +3,6 @@ let breeds = [];
 let retrieveData = [];
 
 function search() {
-    console.log(localStorage.length);
     retrieveData = localStorage.getItem("Razas_de_Perros");
 
     fetch("https://dog.ceo/api/breeds/image/random")
@@ -11,7 +10,6 @@ function search() {
         .then(json => {
             const dogPics = document.getElementById("picture").src = json.message;
             const splitMessage = dogPics.split('/')[4];
-            let repeatedBreed = breeds.includes(splitMessage);
             retrieveData = JSON.parse(localStorage.getItem("Razas_de_Perros"));
 
             if (retrieveData == null) {
@@ -28,45 +26,33 @@ function search() {
                 }
                 if (encontrado) {
                     retrieveData[i][1] = retrieveData[i][1] + 1;
-                    retrieveData.splice(i, 1, retrieveData[i])
+                    retrieveData.splice(i, 1, retrieveData[i]);
                     localStorage.setItem("Razas_de_Perros", JSON.stringify(retrieveData));
                 } else {
                     retrieveData.push([splitMessage, 1, json.message]);
-                    localStorage.setItem("Razas_de_Perros", JSON.stringify(retrieveData))
+                    localStorage.setItem("Razas_de_Perros", JSON.stringify(retrieveData));
                 }
             }
 
             console.log(retrieveData);
+            let repeatedBreed = breeds.includes(splitMessage);
             retrieveData = JSON.parse(localStorage.getItem("Razas_de_Perros"));
             if (!repeatedBreed) {
                 document.getElementById(`${count}`).src = dogPics;
                 breeds.push([splitMessage, 1]);
                 count++
-            } else {
-                breeds.push(splitMessage);
-                const phrase = document.createElement('h3');
-                const text = document.createTextNode('La imagen no se insertará al ser una raza repetida');
-                phrase.appendChild(text);
-                document.body.appendChild(phrase);
-                phrase.style.marginTop = "-20rem";
-                phrase.style.display = "flex";
-                phrase.style.justifyContent = "center";
-                setTimeout(() => {
-                    phrase.style.display = 'none';
-                }, 2000);
-            }
+            } 
             
         })
         .then(json => {
-            let nameDogs = []
-            let countDogs= []
+            let nameDogs = [];
+            let countDogs= [];
             retrieveData = JSON.parse(localStorage.getItem("Razas_de_Perros"));
             for(i = 0; i < retrieveData.length;i++){
-                nameDogs.push(retrieveData[i][0])
+                nameDogs.push(retrieveData[i][0]);
                 
-                countDogs.push(retrieveData[i][1])
+                countDogs.push(retrieveData[i][1]);
             }
-            console.log(nameDogs)
            
             if (count > 20) {
                 const getChart = document.getElementById('myChart');
